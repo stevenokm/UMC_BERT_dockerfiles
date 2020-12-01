@@ -16,7 +16,7 @@ python3 a.py
 ```
 * Now you should run as :
 ```
-sudo docker run --runtime=nvidia --rm -it -v "$PWD":/home/workspace -w /home/workspace pytorch_env/pytorch:1.4_py36_cu101 python3 a.py
+sudo docker run --runtime=nvidia --ipc host --rm -it -v "$PWD":/home/workspace -w /home/workspace pytorch_env/pytorch:1.4_py36_cu101 python3 a.py
 # for Docker >= 19.03
-# sudo docker run --gpus 2 --rm -it -v "$PWD":/home/workspace -w /home/workspace pytorch_env/pytorch:1.4_py36_cu101 python3 a.py
+# sudo docker run --gpus all --ipc host --rm -it -v "$PWD":/home/workspace -w /home/workspace pytorch_env/pytorch:1.4_py36_cu101 python3 a.py
 ```
