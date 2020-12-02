@@ -4,6 +4,7 @@ ENV PATH /opt/conda/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 # issue https://github.com/NVIDIA/nccl/issues/342
 #ENV NCCL_SHM_DISABLE 1 
+# solved by https://discuss.pytorch.org/t/problem-in-dataprallel-for-more-than-2-gpus/103373/3
 
 RUN apt-get update --fix-missing && \
     apt-get install -y wget bzip2 ca-certificates curl git libgtk2.0-dev && \
