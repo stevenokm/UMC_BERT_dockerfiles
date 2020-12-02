@@ -8,6 +8,7 @@ This **Image/Dockerfile** aims to create a container for pytorch runtimes.
 sudo docker build --no-cache -f Dockerfile-py36-torch14-cuda101 -t pytorch_env/pytorch:1.4_py36_cu101 .
 sudo docker build --no-cache -f Dockerfile-py36-torch14-cuda100 -t pytorch_env/pytorch:1.4_py36_cu100 .
 sudo docker build --no-cache -f Dockerfile-py36-torch14-cuda102 -t pytorch_env/pytorch:1.4_py36_cu102 .
+sudo docker build --no-cache -f Dockerfile-py36-torch17-cuda102 -t pytorch_env/pytorch:1.7_py36_cu102 .
 ```
 * For your pytorch scripts, you can use as the hereunder part.
 If you ran your previous python code as 
